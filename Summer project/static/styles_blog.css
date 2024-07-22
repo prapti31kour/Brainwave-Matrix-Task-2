@@ -1,0 +1,402 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    background-image: url('h.jpg');
+    /* background-image: url('b.jpg'); */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-image: url('h.jpg');
+    /* background-color: #426689; */
+    box-shadow: 
+    0 0 20px 10px rgba(0, 0, 0, 0.5), 
+    0 0 30px 20px rgba(0, 0, 0, 0.5),
+    0 0 40px 30px rgba(0, 0, 0, 0.5),
+    0 0 50px 40px rgba(0, 0, 0, 0.5),
+    0 0 60px 50px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 2rem;
+    text-align: left;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-image: url('h.jpg');
+    /* background-color: #294969; */
+}
+
+nav ul {
+    list-style: circle;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: gray;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Background Container */
+#background-container {
+    box-shadow: 
+    0 0 20px 10px rgba(0, 0, 0, 0.2), 
+    0 0 30px 20px rgba(0, 0, 0, 0.2),
+    0 0 40px 30px rgba(0, 0, 0, 0.2),
+    0 0 50px 40px rgba(0, 0, 0, 0.2),
+    0 0 60px 50px rgba(0, 0, 0, 0.2);
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.background-image {
+    min-width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Article Containers */
+#article-containers {
+    box-shadow: 
+    0 0 20px 10px rgba(0, 0, 0, 0.5), 
+    0 0 30px 20px rgba(0, 0, 0, 0.5),
+    0 0 40px 30px rgba(0, 0, 0, 0.5),
+    0 0 50px 40px rgba(0, 0, 0, 0.5),
+    0 0 60px 50px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.article-container {
+    background-image: url('h.jpg');
+    background-color: #f0eaea;
+    /* border: 1px solid #410202; */
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-container img {
+    width: 100%;
+    height: 300px; /* Adjusted height for better grid appearance */
+    object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+.article-content {
+    color: white;
+    padding: 0.5rem;
+}
+
+.article-content h2 {
+    margin-top: 0;
+}
+
+.article-content p {
+    margin-bottom: 0;
+}
+
+
+main {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+#posts {
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
+.post {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.post h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.comments {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.comment {
+    margin-bottom: 0.5rem;
+}
+
+.comment-form input, .comment-form textarea {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    padding: 0.5rem;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.comment-form button:hover {
+    background-color: #495057;
+}
+
+#new-post {
+    width: 50%;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#post-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#post-form input, #post-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#post-form button {
+    padding: 0.5rem;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#post-form button:hover {
+    background-color: #495057;
+}
+
+#auth-container {
+    width: 300px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#auth-container h2 {
+    margin-bottom: 1rem;
+}
+
+#auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+#auth-container form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#auth-container form button {
+    padding: 0.5rem;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#auth-container form button:hover {
+    background-color: #495057;
+}
+
+#auth-container p {
+    margin-top: 1rem;
+}
+
+#auth-container a {
+    color: #444b52;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#auth-container a:hover {
+    text-decoration: underline;
+}
+/* Existing styles */
+/* Existing styles */
+
+.comments {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.comment {
+    margin-bottom: 0.5rem;
+}
+
+.comment-form input, .comment-form textarea {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    padding: 0.5rem;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.comment-form button:hover {
+    background-color: #495057;
+}
+
+.post button {
+    margin-right: 1rem;
+    padding: 0.5rem;
+    background-color: #343a40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.post button:hover {
+    background-color: #495057;
+}
+/* Add this to your styles_blog.css file */
+
+section#quotes-section {
+    color: white;
+    box-shadow: 
+    0 0 20px 10px rgba(0, 0, 0, 2), 
+    0 0 30px 20px rgba(0, 0, 0, 2),
+    0 0 40px 30px rgba(0, 0, 0, 2),
+    0 0 50px 40px rgba(0, 0, 0, 2),
+    0 0 60px 50px rgba(0, 0, 0, 2);
+    background-color: #343a40; /* Optional: Add a background color to make the white text stand out */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+
+section#contact-section {
+    color: white;
+    box-shadow: 
+    0 0 20px 10px rgba(0, 0, 0, 2), 
+    0 0 30px 20px rgba(0, 0, 0, 2),
+    0 0 40px 30px rgba(0, 0, 0, 2),
+    0 0 50px 40px rgba(0, 0, 0, 2),
+    0 0 60px 50px rgba(0, 0, 0, 2);
+    text-size-adjust: 9;
+    background-color: #343a40; /* Optional: Add a background color to make the white text stand out */
+    padding: 6rem;
+    border-radius: 90px;
+}
+
+
+section#about-section {
+    color: white;
+    box-shadow: 
+    0 0 20px 10px rgba(0, 0, 0, 2), 
+    0 0 30px 20px rgba(0, 0, 0, 2),
+    0 0 40px 30px rgba(0, 0, 0, 2),
+    0 0 50px 40px rgba(0, 0, 0, 2),
+    0 0 60px 50px rgba(0, 0, 0, 2);
+    background-color: #343a40; /* Optional: Add a background color to make the white text stand out */
+    padding: 6rem;
+    border-radius: 90px;
+}
+/* styles_blog.css */
+
+.container {
+    background-image: url('h.jpg');
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #582b2b;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #333; /* Change this to the desired text color */
+}
+
+.container h2 {
+    color: #c2d8ee; /* Change this to the desired heading color */
+}
+
+.container label {
+    display: block;
+    margin-bottom: 1px;
+    color: #d5e0ec; /* Change this to the desired label color */
+}
+
+.container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #3d1414;
+    border-radius: 5px;
+}
+
+.container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1d0909;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #2980b9;
+}

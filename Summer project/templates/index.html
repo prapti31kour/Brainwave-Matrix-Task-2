@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles_blog.css') }}">
+</head>
+<body>
+
+    <!-- Main Website Content -->
+    <header>
+        <h1>MIRROR</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="nav-link">Home</a></li>
+                <li><a href="{{ url_for('blog') }}" class="nav-link">Blog</a></li>
+                <li><a href="{{ url_for('quotes') }}" class="nav-link">Quotes</a></li>
+                <li><a href="{{ url_for('about') }}" class="nav-link">About</a></li>
+                <li><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+                <li><a href="{{ url_for('signup') }}" class="nav-link">Sign Up</a></li>
+                <li><a href="{{ url_for('login') }}" class="nav-link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Responsive Background Container -->
+    <section id="background-container">
+        <div class="background-image" style="background-image: url('{{ url_for('static', filename='w.jpg') }}');"></div>
+        <div class="background-image" style="background-image: url('{{ url_for('static', filename='z.jpg') }}');"></div>
+        <div class="background-image" style="background-image: url('{{ url_for('static', filename='p.jpg') }}');"></div>
+    </section>
+
+    <!-- Article Containers -->
+    <section id="article-containers">
+        <div class="article-container">
+            <img src="{{ url_for('static', filename='a11.jpg') }}" alt="Article 1 Image">
+            <div class="article-content">
+                <h2>Flourishing lives</h2>
+                <p>Is it really the life we wanted <a href="#">Read more...</a></p>
+            </div>
+        </div>
+        <div class="article-container">
+            <img src="{{ url_for('static', filename='a2.jpg') }}" alt="Article 2 Image">
+            <div class="article-content">
+                <h2>Sustainable Living</h2>
+                <p>Small Changes, Big Impact <a href="#">Read more...</a></p>
+            </div>
+        </div>
+        <div class="article-container">
+            <img src="{{ url_for('static', filename='a22.jpg') }}" alt="Article 3 Image">
+            <div class="article-content">
+                <h2>Retro Revival</h2>
+                <p>Vintage-Inspired Laptops with Modern Power <a href="#">Read more...</a></p>
+            </div>
+        </div>
+        <div class="article-container">
+            <img src="{{ url_for('static', filename='a4.jpg') }}" alt="Article 4 Image">
+            <div class="article-content">
+                <h2>Digital Detox</h2>
+                <p>Reclaiming Your Time and Focus. <a href="#">Read more...</a></p>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Main content here -->
+    </main>
+
+    <script src="{{ url_for('static', filename='scripts_blog.js') }}"></script>
+</body>
+</html>
